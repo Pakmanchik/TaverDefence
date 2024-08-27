@@ -4,7 +4,7 @@ using UnityEngine.AddressableAssets;
 
 namespace Addressable.Keys
 {
-    [CreateAssetMenu(fileName = "GameAddressableKeys", menuName = "Bombers/Keys/GameAddressableKeys")]
+    [CreateAssetMenu(fileName = "GameAddressableKeys", menuName = "Addressables/Keys/GameAddressableKeys")]
     public sealed class GameAddressableKeys : ScriptableObject, IGameAddressableKeys
     {
         [SerializeField] private AssetReference sf_inGame;
