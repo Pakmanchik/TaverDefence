@@ -3,5 +3,6 @@
     public class Core
     {
         
+namespace TowerDefence.Core
     }
 }
