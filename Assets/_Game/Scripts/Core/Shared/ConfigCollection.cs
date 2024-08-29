@@ -1,5 +1,7 @@
 ﻿using Addressable.Keys;
 using Localization.Shared;
+using TowerDefence.Game.Entity.Configs;
+using TowerDefence.Game.Entity.Configs.Towers;
 using UnityEngine;
 
 namespace TowerDefence.Core.Shared
@@ -10,5 +12,6 @@ namespace TowerDefence.Core.Shared
         [SerializeField] public GameAddressableKeys _gameAddressableKeys;
         [SerializeField] public MenuAddressableKeys _menuAddressableKeys;
         [SerializeField] public LanguageConfig _languageConfig;
+        [SerializeField] public CollectionTowerConfigs _collectionTowerConfigs;
     }
 }

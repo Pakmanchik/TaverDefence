@@ -17,3 +17,5 @@ MonoBehaviour:
   _menuAddressableKeys: {fileID: 11400000, guid: 60c17bca87650754e9708ee851725e2b,
     type: 2}
   _languageConfig: {fileID: 11400000, guid: b0fcbbcd790ed524a81d76320079822a, type: 2}
+  _collectionTowerConfigs: {fileID: 11400000, guid: 3ace17193da47114ba711774e8ad8e87,
+    type: 2}

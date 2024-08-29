@@ -1,10 +1,14 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Addressable.Impl;
 using DI.Contract;
 using DI.UnityZenject;
 using Systems.LoadingScreen.Impl;
 using TowerDefence.Core.Installers;
 using TowerDefence.Core.Shared;
+using TowerDefence.Game.Entity.Towers;
+using TowerDefence.Game.Factory;
+using TowerDefence.Game.Shared;
 using UnityEngine;
 
 namespace TowerDefence.Core
@@ -17,7 +21,7 @@ namespace TowerDefence.Core
         private IDiContainer _container;
         private IServiceResolver _resolver;
 
-        private AddressableImpl _addressable;
+        private AddressableImplUpdated _addressable;
 
         public async void Entry()
         {
@@ -59,8 +63,7 @@ namespace TowerDefence.Core
 
         private void StartGame()
         {
-            var rootManger = new RootManager();
-            _container.Inject(rootManger).Start();
+            _container.Inject(new RootManager()).Start();
         }
     }
 }

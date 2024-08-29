@@ -17,7 +17,7 @@ namespace TowerDefence.Core.Installers
             _addressable = addressable;
         }
         
-        public async void InstallTo(IDiContainer diContainer)
+        public void InstallTo(IDiContainer diContainer)
         {
             diContainer.BindSingleton<IMessageBus, MessageBusImpl>();
             diContainer.BindFromInstance(_addressable);

@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2804f08d92b5416bbf050765cbd5f07c, type: 3}
+  m_Name: CollectionTowerConfigs
+  m_EditorClassIdentifier: 
+  _towerConfigs:
+  - {fileID: 11400000, guid: 7f6aadd4c72878843a797e3c899f21ab, type: 2}

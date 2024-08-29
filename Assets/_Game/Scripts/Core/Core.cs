@@ -21,7 +21,7 @@ namespace TowerDefence.Core
             _instance.StartEntryPoint();
         }
 
-        private async void StartEntryPoint()
+        private void StartEntryPoint()
         {
             var entryPoint = Object.Instantiate(Resources.Load<EntryPoint>(EntryPointKey));
             entryPoint.Entry();

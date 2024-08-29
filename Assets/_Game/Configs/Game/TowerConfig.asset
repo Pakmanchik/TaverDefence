@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d575427cfe1b426cb8ff688101f43fa7, type: 3}
+  m_Name: TowerConfig
+  m_EditorClassIdentifier: 
+  _towerType: 0
+  _levels:
+  - _level: 2
+    _maxHealth: 0
+    _armor: 0
+    _attackRate: 0
+    _attackRange: 0
+    _abstractTowerPrefab:
+      m_AssetGUID: 7131c440bffaca94d90e22867f66cd6a
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0

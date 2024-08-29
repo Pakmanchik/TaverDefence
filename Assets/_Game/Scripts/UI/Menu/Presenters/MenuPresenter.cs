@@ -37,7 +37,7 @@ namespace TowerDefence.UI.Menu.Presenters
         public override void HideWindow()
         {
             base.HideWindow();
-            Addressable.ReleaseInstanceAsset(_menuAddressableKeys.MainMenu);
+            Addressable.ReleaseAsset(_menuAddressableKeys.MainMenu);
             _localizationService.RemoveAllWrapper(LocalizationWindow.MainMenu);
         }
     }
