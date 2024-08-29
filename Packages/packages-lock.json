@@ -6,14 +6,11 @@
       "source": "embedded",
       "dependencies": {}
     },
-    "com.unity.adaptiveperformance": {
-      "version": "5.1.0",
+    "com.textmesh.pro": {
+      "version": "file:TextMeshPro",
       "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.profiling.core": "1.0.2"
-      },
-      "url": "https://packages.unity.com"
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.unity.addressables": {
       "version": "1.22.2",
@@ -94,13 +91,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.unity.profiling.core": {
-      "version": "1.0.2",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
     "com.unity.render-pipelines.core": {
       "version": "14.0.11",
       "depth": 1,
@@ -167,7 +157,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.textmeshpro": {
-      "version": "3.0.6",
+      "version": "3.0.9",
       "depth": 0,
       "source": "registry",
       "dependencies": {
