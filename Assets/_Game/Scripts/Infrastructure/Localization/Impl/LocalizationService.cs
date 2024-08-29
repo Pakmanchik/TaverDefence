@@ -17,20 +17,19 @@ namespace Localization.Impl
 
         private Languages _lastLanguage = Languages.None;
 
-        /*public LocalizationService(ILocalizationDataAccessor localizationDataAccessor, LanguageConfig languageConfig)
+        public LocalizationService(LanguageConfig languageConfig)
         {
-            _localizationDataAccessor = localizationDataAccessor;
             _languageSwitcher         = new LocalizationSwitcher(languageConfig);
 
             LoadPresettings();
-        }*/
+        }
 
         public Languages LanguagesNow => _lastLanguage;
 
         private void LoadPresettings()
         {
-         //   var result = _localizationDataAccessor.LoadLanguage();
-           // SwitchLanguage(result);
+            // пока сразу русский
+            SwitchLanguage(Languages.Russian);
         }
 
         public void SwitchLanguage(Languages languages)
@@ -39,7 +38,6 @@ namespace Localization.Impl
                 return;
 
             _lastLanguage = languages;
-           // _localizationDataAccessor.SaveLanguage(languages);
 
             _wordStorage = _languageSwitcher.GetDictionary(languages);
 

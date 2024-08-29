@@ -1,30 +1,28 @@
 using System.Collections.Generic;
 using Localization.Contract;
 using Localization.Shared;
-//using Scripts.Core.Configs;
 using UnityEngine;
 
 namespace Localization.Impl
 {
     public class LocalizationSwitcher : ILanguageSwitcher
     {
-      //  private readonly LanguageConfig _languageConfig;
+        private readonly LanguageConfig _languageConfig;
         
-        /*public LocalizationSwitcher(LanguageConfig languageConfig)
+        public LocalizationSwitcher(LanguageConfig languageConfig)
         {
-          //  _languageConfig = languageConfig;
-        }*/
+            _languageConfig = languageConfig;
+        }
 
         public Dictionary<string, TextSettings> GetDictionary(Languages languages)
         {
-            /*var language = languages switch
+            var language = languages switch
             {
                 Languages.Russian => AssembleDictionary(_languageConfig.Ru_ru),
                 _ => AssembleDictionary(_languageConfig.Eng_eng),
             };
 
-            return language;*/
-            return null;
+            return language;
         }
 
         private Dictionary<string, TextSettings> AssembleDictionary(TextAsset textAsset)

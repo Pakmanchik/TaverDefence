@@ -1,0 +1,4 @@
+﻿key|value|size
+@language|Язык|32
+@ui_button_start_game|Начать игру|32
+@ui_button_exit|Выйти|32
