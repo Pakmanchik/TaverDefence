@@ -2,6 +2,7 @@
 {
     public interface IDiContainer
     {
+        public TImplementation Inject<TImplementation>(TImplementation forInject);
         public void BindTransient<TService, TImplementation>()
             where TService : class
             where TImplementation : class, TService;

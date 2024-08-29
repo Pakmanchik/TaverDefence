@@ -28,6 +28,13 @@ namespace DI.UnityZenject
             _postBindingGuard.Check<TService>();
             _container.Bind<TService>().AsTransient();
         }
+        
+        public TImplementation Inject<TImplementation>(TImplementation forInject)
+        {
+            _container.Inject(forInject);
+
+            return (TImplementation)forInject;
+        }
 
         public void BindSingleton<TService, TImplementation>()
             where TService : class
